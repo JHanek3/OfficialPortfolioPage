@@ -1,0 +1,66 @@
+//Defines the default styling for how that element should look in all
+//occurances of the page. (margin, padding, color etc.)
+.container-fluid
+  padding: 0
+
+.row
+  height: inherit
+  margin: auto
+
+.col-sm-12
+  width: 100%
+  height: inherit
+  margin-right: 0
+  margin-left: 0
+  padding-right: 0
+  padding-left: 0
+
+.greetLight
+  padding: 0
+  width: 100%
+  margin: auto
+  height: 30vh
+  width: 100%
+  text-align: center
+  background-color: #ECEEEF
+
+.greetDark
+  height: 60vh
+  width: 100%
+  background-color: #CCCCCC
+
+.greetName
+  width: 100%
+  font-size: 26px
+  text-align: center
+  font-family: 'Merriweather', serif
+
+.wordContainer
+  display: flex
+  align-items: center
+  justify-content: center
+
+.introP
+  font-size: 1.875rem
+  line-height: 1.4
+  margin-bottom: 0
+  text-align: center
+
+@media (max-width: 1210px)
+  .introP
+    font-size: 1.5rem
+    line-height: normal
+    padding: 1em
+
+  .greetLight
+    height: auto
+
+  .greetDark
+    height: auto
+
+  .introP
+    font-size: 1rem
+
+@media (max-width: 375px)
+  .jumbotron-fluid
+    padding: .5em

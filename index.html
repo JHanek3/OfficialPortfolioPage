@@ -1,22 +1,99 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+  <!--CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css"
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="navbarContainer">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Click Away!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="#">About Me</a>
+        <a class="nav-item nav-link" href="#">Projects</a>
+        <a class="nav-item nav-link" href="#">Achievements</a>
+        <a class="nav-item nav-link" href="#">Contact Me</a>
+      </div>
+    </div>
+  </nav>
+  </div>
+
+  <div class="container-fluid greetLight">
+    <div class="row justify-content-center">
+      <div class="col-sm-12">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container-fluid">
+            <h1 class="display-4">Welcome to my Portfolio Page</h1>
+            <p class="lead">Learning since 1995, Coding since 2017, Publishing since 2019!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid greetDark">
+    <div class="row">
+      <div class="col-sm-12 col-md-3 photoContainer">
+        <img class="img-fluid headshot" src="assets/headshot.jpg" alt="pic of my beautiful face">
+        <p class="greetName">Jonathon Hanek</p>
+      </div>
+      <div class="col-sm-12 col-md-9 wordContainer">
+        <p class="introP">Hello, thank you for taking the time to browse my
+          landing page. I've included various tabs about myself where you can
+          find my interests, resume, past projects, and other useful
+          information. If you want to look at any of my source code, you'll find a
+          github link in the footer. This was the first project
+          I've done freehand for web development, that being said this webpage
+          should be mobile compatible. If you find any errors, whether it is
+          display or source by all means send me an email. Happy Coding!</p>
+      </div>
+    </div>
+  </div>
+
+    <footer class="footer bg-dark">
+      <div class="container-fluid bot">
+        <div class="row">
+          <div class="col-sm-12 col-lg-1 footerWrapper">
+            <p class="footerLogo">JH</p>
+        </div>
+        <div class="col-sm-12 col-lg-11 footerClicks">
+          <a href="https://www.linkedin.com/in/jonathon-hanek-731230177" target="_blank">
+            <i class="fa fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/JHanek3" target="_blank">
+            <i class="fa fa-github-square fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
+
 </html>

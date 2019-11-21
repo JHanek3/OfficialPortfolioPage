@@ -1,0 +1,6 @@
+that if you use vh, make sure your containers inherit the height otherwise the
+content will overflow.
+
+adjusting the size of an img is painful, look into how to make it easier
+
+relearn rem and em
