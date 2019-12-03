@@ -1,5 +1,10 @@
 //Defines the default styling for how that element should look in all
 //occurances of the page. (margin, padding, color etc.)
+
+//All index
+html, body
+  height: 100%
+
 .container-fluid
   padding: 0
 
@@ -22,12 +27,12 @@
   height: 30vh
   width: 100%
   text-align: center
-  background-color: #ECEEEF
+  background-color: $background-light
 
 .greetDark
   height: 60vh
   width: 100%
-  background-color: #CCCCCC
+  background-color: $background-dark
 
 .greetName
   width: 100%
@@ -39,6 +44,7 @@
   display: flex
   align-items: center
   justify-content: center
+  padding: 2em
 
 .introP
   font-size: 1.875rem
@@ -58,9 +64,44 @@
   .greetDark
     height: auto
 
-  .introP
-    font-size: 1rem
 
 @media (max-width: 375px)
+    .introP
+      font-size: 1rem
+      padding: .5em
+
   .jumbotron-fluid
     padding: .5em
+
+//All contact
+.mommaContainer
+  display: flex
+  flex-flow: column
+
+.contactBox
+  background-color: $background-light
+  display: flex
+  margin: auto
+  text-align: center
+  height: 30vh
+  padding: 2em
+
+.contactP
+  font-size: 1rem
+  line-height: 1.4
+  margin-bottom: 0
+  text-align: center
+
+@media (max-width: 1210px)
+  .contactP
+    line-height: normal
+    padding: 1em
+
+  .contactBox
+    height: auto
+
+  .photoEmail
+    height: auto
+
+
+//All About Me

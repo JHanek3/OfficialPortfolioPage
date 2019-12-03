@@ -4,3 +4,5 @@ content will overflow.
 adjusting the size of an img is painful, look into how to make it easier
 
 relearn rem and em
+
+do I want to download the google font?

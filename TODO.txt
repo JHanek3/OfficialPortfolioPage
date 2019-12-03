@@ -1,0 +1,4 @@
+rename tabs, like in the upper instead of just contact.html
+do I want to download the google fonts?
+except here alert on click away!
+fix contact href

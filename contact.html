@@ -13,8 +13,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster|Merriweather&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css" </head>
+
 <body>
-  <div class="navbarContainer 1page">
+  <div class="navbarContainer">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Click Away!</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,38 +32,29 @@
       </div>
     </nav>
   </div>
-
-  <div class="container-fluid greetLight">
-    <div class="row justify-content-center">
-      <div class="col-sm-12">
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container-fluid">
-            <h1 class="display-4">Welcome to my Portfolio Page</h1>
-            <p class="lead">Learning since 1995, Coding since 2017, Publishing since 2019!</p>
-          </div>
-        </div>
+  <div class="mommaContainer">
+  <div class="contactBox">
+    <div class="col-sm-12">
+      <div class="container-fluid">
+        <h1>How to contact me</h1>
+        <p class="contactP">
+          As of right now the best way to reach me is by email. My official business suit email is <button class="emailBtn" id="bus" onclick="coPY(this.id)">Business Email</button>.
+          My just informal, talk about code, this website, or just touch base is <button class="emailBtn" id="inf" onclick="coPY(this.id)">Informal Email</button>.
+          Just click on the hyperlink for the email address, I didn't post my email to try to reduce the amount of spam I'd get from webscrappers.
+          If you send an email during the day, I will respond before the end of that day. If its sent at night, I'll respond to it by noon at the lastest.
+          <br><br>
+          Soon this will have a cool input field where you just enter your email and type somethings hit submit
+          and it'll send to me.</p>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid greetDark">
-    <div class="row">
-      <div class="col-sm-12 col-md-3 photoContainer">
-        <img class="img-fluid headshot" src="assets/headshot.jpg" alt="pic of my beautiful face">
-        <p class="greetName">Jonathon Hanek</p>
-      </div>
-      <div class="col-sm-12 col-md-9 wordContainer">
-        <p class="introP">Hello, thank you for taking the time to browse my
-          landing page. I've included various tabs about myself where you can
-          find my interests, resume, past projects, and other useful
-          information. If you want to look at any of my source code, you'll find a
-          github link in the footer. This was the first project
-          I've done freehand for web development, that being said this webpage
-          should be mobile compatible. If you find any errors, whether it is
-          display or source by all means send me an email. Happy Coding!</p>
-      </div>
-    </div>
+  <div class ="photoEmail">
+          <img class="img-fluid" src="assets/email.jpg" alt="pic of email icon">
   </div>
+</div>
+
+
 
   <footer class="footer bg-dark">
     <div class="container-fluid bot">
@@ -80,17 +72,13 @@
     </div>
   </footer>
 
-
-
-
-
-
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
   </body>
 
 </html>

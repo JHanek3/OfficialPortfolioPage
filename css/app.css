@@ -1,3 +1,6 @@
+html, body {
+  height: 100%; }
+
 .container-fluid {
   padding: 0; }
 
@@ -36,7 +39,8 @@
 .wordContainer {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding: 2em; }
 
 .introP {
   font-size: 1.875rem;
@@ -54,13 +58,38 @@
     height: auto; }
 
   .greetDark {
-    height: auto; }
-
-  .introP {
-    font-size: 1rem; } }
+    height: auto; } }
 @media (max-width: 375px) {
   .jumbotron-fluid {
     padding: 0.5em; } }
+.mommaContainer {
+  display: flex;
+  flex-flow: column; }
+
+.contactBox {
+  background-color: #ECEEEF;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  height: 30vh;
+  padding: 2em; }
+
+.contactP {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+  text-align: center; }
+
+@media (max-width: 1210px) {
+  .contactP {
+    line-height: normal;
+    padding: 1em; }
+
+  .contactBox {
+    height: auto; }
+
+  .photoEmail {
+    height: auto; } }
 .row {
   display: flex;
   width: 100%;
@@ -129,6 +158,13 @@
   margin: auto;
   height: auto; }
 
+.photoEmail {
+  display: flex;
+  background-color: #CCCCCC;
+  height: 60vh;
+  align-items: center;
+  justify-content: center; }
+
 @media (max-width: 1210px) {
   .headshot {
     padding: 1em; } }
@@ -150,11 +186,12 @@
 .footerWrapper {
   background-color: black;
   order: 1;
-  display: flex;
-  height: inherit; }
+  display: flex; }
+
+.row.scroll {
+  height: 42px; }
 
 .footerLogo {
-  background-color: black;
   width: 100%;
   max-height: 100%;
   font-family: "Lobster", cursive;
@@ -195,5 +232,12 @@
 @media (max-width: 991px) {
   .navbarContainer {
     height: auto; } }
+.emailBtn {
+  all: unset;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer; }
+  .emailBtn:hover {
+    color: #6666ff; }
 
 /*# sourceMappingURL=app.css.map */
