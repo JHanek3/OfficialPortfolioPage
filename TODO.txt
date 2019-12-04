@@ -2,3 +2,8 @@ rename tabs, like in the upper instead of just contact.html
 do I want to download the google fonts?
 except here alert on click away!
 fix contact href
+make all the texts fonts similar
+fix my face on the front page again
+fix layout of contact me
+give border to greet photo
+dont forget to link certificates

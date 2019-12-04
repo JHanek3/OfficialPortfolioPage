@@ -46,7 +46,8 @@ html, body {
   font-size: 1.875rem;
   line-height: 1.4;
   margin-bottom: 0;
-  text-align: center; }
+  text-align: center;
+  font-family: "Merriweather", serif; }
 
 @media (max-width: 1210px) {
   .introP {
@@ -75,10 +76,11 @@ html, body {
   padding: 2em; }
 
 .contactP {
-  font-size: 1rem;
+  font-size: 1.875rem;
   line-height: 1.4;
   margin-bottom: 0;
-  text-align: center; }
+  text-align: center;
+  font-family: "Merriweather", serif; }
 
 @media (max-width: 1210px) {
   .contactP {
@@ -90,6 +92,75 @@ html, body {
 
   .photoEmail {
     height: auto; } }
+.aboutMe {
+  background-color: #ECEEEF;
+  padding: 2.5%; }
+
+.aboutMeTitle {
+  display: flex;
+  justify-content: center; }
+
+.aboutMeContent {
+  background-color: #CCCCCC; }
+
+.firstRow {
+  display: flex;
+  flex-direction: row; }
+
+.PhotoR {
+  order: 1;
+  width: 20%;
+  margin: 0;
+  padding: 1em;
+  text-align: center; }
+
+.resume {
+  font-family: "Merriweather", serif; }
+
+.Achievements {
+  order: 2;
+  padding: 1em;
+  width: 40%; }
+
+.listItems {
+  font-family: "Merriweather", serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 0; }
+  .listItems.Special {
+    cursor: pointer; }
+
+.codingCertificates {
+  order: 3;
+  padding: 1em;
+  width: 40%; }
+
+.listItems:hover img {
+  display: block; }
+
+.secondRow {
+  display: flex;
+  flex-direction: row; }
+
+.goalP {
+  order: 1; }
+
+.goalC {
+  order: 2; }
+
+.goalI {
+  order: 3; }
+
+.thirdRow {
+  display: flex;
+  flex-direction: row; }
+
+.Hobbies {
+  order: 1; }
+
+.carousel.slide {
+  order: 2; }
+
 .row {
   display: flex;
   width: 100%;
@@ -164,6 +235,18 @@ html, body {
   height: 60vh;
   align-items: center;
   justify-content: center; }
+
+.funnyHead {
+  height: 300px;
+  width: 200px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid; }
+
+.certPhoto {
+  height: 50%;
+  width: 80%;
+  display: none; }
 
 @media (max-width: 1210px) {
   .headshot {

@@ -22,6 +22,3 @@ function coPY(clicked_id) {
     alert("Copied to clipboard: " + copyText);
   }
 }
-
-// style the rest of the page
-//carousel?
