@@ -22,3 +22,11 @@ function coPY(clicked_id) {
     alert("Copied to clipboard: " + copyText);
   }
 }
+
+function notHere(){
+  alert("Except Here :)")
+}
+
+jQuery( "li:has(ul)" ).click(function(){
+  jQuery(this).toggleClass('active');
+});

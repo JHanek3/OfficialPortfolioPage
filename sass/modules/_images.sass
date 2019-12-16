@@ -23,7 +23,7 @@
 .photoEmail
   display: flex
   background-color: $background-dark
-  height: 60vh
+  height: 100%
   align-items: center
   justify-content: center
 
@@ -39,9 +39,17 @@
   width: 80%
   display: none
 
-@media (max-width: 1210px)
+@media (max-width: 1225px)
   .headshot
     padding: 1em
+    margin-bottom: 0
+
+  .photoEmail
+    height: auto
+    flex-grow: 1
+
+  .greetName
+    margin-top: 0
 
 @media (max-width: 767px)
   .headshot

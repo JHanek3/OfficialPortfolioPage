@@ -1,5 +1,10 @@
-html, body {
-  height: 100%; }
+html {
+  height: 100%;
+  width: auto; }
+
+body {
+  width: 100%;
+  height: 100vh; }
 
 .container-fluid {
   padding: 0; }
@@ -23,12 +28,14 @@ html, body {
   height: 30vh;
   width: 100%;
   text-align: center;
-  background-color: #ECEEEF; }
+  background-color: #ECEEEF;
+  order: 1; }
 
 .greetDark {
   height: 60vh;
   width: 100%;
-  background-color: #CCCCCC; }
+  background-color: #CCCCCC;
+  order: 2; }
 
 .greetName {
   width: 100%;
@@ -49,52 +56,89 @@ html, body {
   text-align: center;
   font-family: "Merriweather", serif; }
 
-@media (max-width: 1210px) {
+@media (max-width: 1225px) {
+  .jumbotron {
+    margin-bottom: 0; }
+
   .introP {
-    font-size: 1.5rem;
-    line-height: normal;
-    padding: 1em; }
+    margin: auto; }
 
   .greetLight {
     height: auto; }
 
   .greetDark {
+    height: 73vh; } }
+@media (max-width: 770px) {
+  .introP {
+    font-size: 1.5rem;
+    line-height: normal; } }
+@media (max-width: 500px) {
+  .greetDark {
     height: auto; } }
 @media (max-width: 375px) {
   .jumbotron-fluid {
-    padding: 0.5em; } }
+    padding: 0.5em; }
+
+  .introP {
+    padding: 0;
+    margin: auto;
+    font-size: 1rem;
+    line-height: 1.25rem; }
+
+  .greetDark {
+    height: auto; } }
 .mommaContainer {
   display: flex;
-  flex-flow: column; }
+  flex-flow: column;
+  height: 90%;
+  overflow: hidden; }
 
 .contactBox {
   background-color: #ECEEEF;
   display: flex;
   margin: auto;
   text-align: center;
-  height: 30vh;
+  height: auto;
   padding: 2em; }
 
 .contactP {
-  font-size: 1.875rem;
-  line-height: 1.4;
+  font-family: "Merriweather", serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
   margin-bottom: 0;
-  text-align: center;
-  font-family: "Merriweather", serif; }
+  text-align: center; }
 
-@media (max-width: 1210px) {
+@media (max-width: 1225px) {
+  .mommaContainer {
+    height: 90.85%; }
+
   .contactP {
     line-height: normal;
-    padding: 1em; }
+    margin: auto; }
 
   .contactBox {
     height: auto; }
 
-  .photoEmail {
-    height: auto; } }
+  .Emailicon {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; } }
+@media (max-width: 760px) {
+  .contactP {
+    font-size: 1rem;
+    line-height: 1.25rem; } }
+@media (max-width: 375px) {
+  .contactP {
+    line-height: normal;
+    font-size: 0.85rem; } }
+@media (max-width: 320px) {
+  .Emailicon {
+    height: 50px; }
+
+  .contactP {
+    font-size: 0.75rem; } }
 .aboutMe {
   background-color: #ECEEEF;
-  padding: 2.5%; }
+  width: 100%; }
 
 .aboutMeTitle {
   display: flex;
@@ -105,13 +149,14 @@ html, body {
 
 .firstRow {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  max-width: 100%; }
 
 .PhotoR {
   order: 1;
   width: 20%;
   margin: 0;
-  padding: 1em;
+  margin: 1em;
   text-align: center; }
 
 .resume {
@@ -119,48 +164,219 @@ html, body {
 
 .Achievements {
   order: 2;
-  padding: 1em;
+  margin: 1em;
   width: 40%; }
 
 .listItems {
   font-family: "Merriweather", serif;
   font-size: 1.25rem;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-bottom: 0; }
   .listItems.Special {
     cursor: pointer; }
 
+.subItems {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  cursor: pointer; }
+
+.subItems:hover {
+  color: blue;
+  text-decoration: underline;
+  opacity: 0.4; }
+
+.subItems.superSub {
+  color: black;
+  text-decoration: none;
+  opacity: 1; }
+
+.pubLink {
+  text-decoration: none;
+  color: black; }
+
 .codingCertificates {
   order: 3;
-  padding: 1em;
+  margin: 1em;
   width: 40%; }
 
 .listItems:hover img {
   display: block; }
 
+@media (max-width: 1025px) {
+  .firstRow {
+    flex-wrap: wrap; }
+
+  .PhotoR {
+    width: 100%;
+    margin: 0.5em;
+    padding: 0;
+    order: 1; }
+
+  .Achievements {
+    margin: 0.5em;
+    padding: 0;
+    width: 50%;
+    flex: 1; }
+
+  .codingCertificates {
+    margin: 0.5em;
+    padding: 0;
+    width: 50%;
+    flex: 1; } }
+@media (max-width: 760px) {
+  .firstRow {
+    flex-direction: column; }
+
+  .display-4 {
+    font-size: 2.5rem; }
+
+  .listItems {
+    font-size: 1rem; }
+
+  .PhotoR {
+    width: 100%;
+    margin: auto;
+    order: 1; }
+
+  .Achievements {
+    width: 100%;
+    order: 2;
+    margin: auto; }
+
+  .codingCertificates {
+    width: 100%;
+    order: 3;
+    margin: auto; } }
 .secondRow {
   display: flex;
   flex-direction: row; }
 
 .goalP {
-  order: 1; }
+  width: 33.3%;
+  order: 1;
+  margin: 1em;
+  margin-left: 1.5em; }
 
 .goalC {
-  order: 2; }
+  order: 2;
+  width: 33.3%;
+  margin: 1em; }
 
 .goalI {
-  order: 3; }
+  order: 3;
+  width: 33.3%;
+  margin: 1em; }
 
+@media (max-width: 760px) {
+  .secondRow {
+    flex-direction: column; }
+
+  .goalP {
+    width: 100%;
+    order: 1;
+    margin: auto; }
+
+  .goalC {
+    order: 2;
+    width: 100%;
+    margin: auto; }
+
+  .goalI {
+    order: 3;
+    width: 100%;
+    margin: auto; } }
 .thirdRow {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  width: 100%;
+  overflow: auto; }
 
 .Hobbies {
-  order: 1; }
+  order: 1;
+  width: 30%;
+  margin: 1em;
+  margin-left: 1.5em; }
 
 .carousel.slide {
-  order: 2; }
+  display: flex; }
 
+.carousel {
+  order: 2;
+  width: 70%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: none;
+  margin-right: 1em;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid; }
+
+.carousel-inner {
+  height: 100%; }
+
+.carousel-item {
+  width: auto;
+  height: 100%;
+  max-height: 100%; }
+
+@media (max-width: 1025px) {
+  .thirdRow {
+    flex-direction: column; }
+
+  .Hobbies {
+    width: 100%;
+    margin: auto; }
+
+  .carousel {
+    margin: auto;
+    margin-bottom: 0.5em;
+    width: 95%; } }
+@media (max-width: 760px) {
+  .Hobbies {
+    width: auto; }
+
+  .carousel {
+    margin: auto;
+    margin-bottom: 0.25em; }
+
+  .carousel-item img {
+    width: auto;
+    height: 300px;
+    max-height: 300px; } }
+.projects {
+  background-color: #ECEEEF;
+  width: 100%; }
+
+.webDev {
+  background-color: #CCCCCC; }
+
+.projectHeader {
+  margin-left: 0.75em; }
+
+.webDevInner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.card {
+  margin: 0.5em;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 7px; }
+
+@media (max-width: 760px) {
+  .projectHeader {
+    text-align: center;
+    margin: auto; }
+
+  .card {
+    margin: auto;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em; } }
 .row {
   display: flex;
   width: 100%;
@@ -232,7 +448,7 @@ html, body {
 .photoEmail {
   display: flex;
   background-color: #CCCCCC;
-  height: 60vh;
+  height: 100%;
   align-items: center;
   justify-content: center; }
 
@@ -248,9 +464,17 @@ html, body {
   width: 80%;
   display: none; }
 
-@media (max-width: 1210px) {
+@media (max-width: 1225px) {
   .headshot {
-    padding: 1em; } }
+    padding: 1em;
+    margin-bottom: 0; }
+
+  .photoEmail {
+    height: auto;
+    flex-grow: 1; }
+
+  .greetName {
+    margin-top: 0; } }
 @media (max-width: 767px) {
   .headshot {
     padding: 1em;
@@ -258,9 +482,9 @@ html, body {
     width: 16em; } }
 .footer {
   position: relative;
-  left: 0;
+  width: 100%;
   bottom: 0;
-  width: 100%; }
+  left: 0; }
 
 .container-fluid.bot {
   padding: 0;
@@ -287,7 +511,7 @@ html, body {
   order: 2; }
 
 .fa {
-  padding: 5px;
+  margin: 5px;
   margin-left: 20px; }
 
 .fa.fa-linkedin {
@@ -312,7 +536,7 @@ html, body {
 .navbar {
   height: inherit; }
 
-@media (max-width: 991px) {
+@media (max-width: 1025px) {
   .navbarContainer {
     height: auto; } }
 .emailBtn {
