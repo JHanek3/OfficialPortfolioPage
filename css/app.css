@@ -345,7 +345,14 @@ body {
   .carousel-item img {
     width: auto;
     height: 300px;
-    max-height: 300px; } }
+    max-height: 300px; }
+
+  .dropdown-menu {
+    width: 90%;
+    word-wrap: break-word; }
+
+  .dropdown-menu > li {
+    white-space: normal; } }
 .projects {
   background-color: #ECEEEF;
   width: 100%; }
