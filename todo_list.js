@@ -1,7 +1,5 @@
 'use strict';
 
-import React from "react";
-
 function ToDoList() {
     return React.createElement(
         "div",
