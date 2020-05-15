@@ -1,21 +1,35 @@
-'use strict';
+import React, {useState} from "react"
+import TodoItem from "./todo_list_item"
+import todosData from "./../assets/todosData"
+import "../css/app.css"
 
 function ToDoList() {
-    return (
-        <div>
-            <input type="checkbox"/>
-            <p>Placeholder Text here</p>
+    const [globalData, setGlobalData] = useState(todosData)
 
-            <input type="checkbox"/>
-            <p>Placeholder Text here</p>
+  function handleChange(id) {
+    setGlobalData(item => {
+      const updatedToDos = item.map(todo => {
+        if (todo.id === id) {
+          return {
+            ...todo,
+            completed: !todo.completed
+          }
 
-            <input type="checkbox"/>
-            <p>Placeholder Text here</p>
+        } 
+        return todo
+      })
+      return updatedToDos
+    })
+  }
 
-            <input type="checkbox"/>
-            <p>Placeholder Text here</p>
-        </div>
-    )
+  const itemsData = globalData.map(item => <TodoItem key={item.id} item={item} handleChange={handleChange}/>)
+
+
+  return(
+    <div className="todo-list">
+      {itemsData}
+    </div>
+  )
 }
 
 
