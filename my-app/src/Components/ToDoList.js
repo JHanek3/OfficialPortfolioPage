@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import TodoItem from "./ToDoItem"
-import todosData from "../../../assets/todosData"
+import todosData from "../todosData"
 import "../App.css"
 
 
