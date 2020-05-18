@@ -21,7 +21,7 @@ const todosData = [
     },
     {
         id: 5,
-        text: "Catch up lastest Netflix series",
+        text: "Catch up on lastest Netflix series",
         completed: false
     }
 ]

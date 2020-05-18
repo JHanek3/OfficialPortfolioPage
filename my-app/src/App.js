@@ -1,14 +1,10 @@
-import React from 'react';
-import './App.css';
+import React from "react"
+import "./App.css"
+import List from "./Components/ToDoList"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello World</p>
-      </header>
-    </div>
-  );
+  return(
+    <List/>
+  )
 }
-
-export default App;
+export default App

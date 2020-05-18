@@ -1,5 +1,5 @@
-'use strict';
-import "./../css/app.css"
+import React from "react"
+import "../App.css"
 
 function TodoItem(props) {
     const completedStyle = {

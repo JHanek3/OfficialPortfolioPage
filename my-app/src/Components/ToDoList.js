@@ -1,10 +1,11 @@
-import React, {useState} from "/react"
-import TodoItem from "./todo_list_item"
-import todosData from "./../assets/todosData"
-import "../css/app.css"
+import React, {useState} from "react"
+import TodoItem from "./ToDoItem"
+import todosData from "../../../assets/todosData"
+import "../App.css"
 
-function ToDoList() {
-    const [globalData, setGlobalData] = useState(todosData)
+
+function List() {
+  const [globalData, setGlobalData] = useState(todosData)
 
   function handleChange(id) {
     setGlobalData(item => {
@@ -31,7 +32,4 @@ function ToDoList() {
     </div>
   )
 }
-
-
-let domContainer = document.querySelector('#todo_list_container');
-ReactDOM.render(<ToDoList/>, domContainer);
+export default List
