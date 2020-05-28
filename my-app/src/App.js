@@ -9,7 +9,7 @@ function App() {
   return(
     <div>
       <Switch>
-        <Route exact path="/"><Home/></Route>
+        <Route exact path="http://hanekpro.com/my-app/build/index.html"><Home/></Route>
         <Route exact path="/List"><List/></Route>
         <Route exact path="/Meme"><MemeGenerator/></Route>
       </Switch>
