@@ -1,10 +1,13 @@
-import React from "react"
+import React  from "react"
+import Header from "./Header"
+import MemeGeneratorComp from "./MGComp"
 import "../App.css"
 
 function MemeGenerator() {
     return (
         <div>
-            <p>Router yes?</p>
+            <Header/>
+            <MemeGeneratorComp/>
         </div>
     )
 }
