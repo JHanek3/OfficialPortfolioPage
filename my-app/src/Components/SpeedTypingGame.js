@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useRef} from "react"
+import "../compCSS/SpeedTyping.css"
 
 function SpeedTypingGame() {
 
@@ -45,7 +46,7 @@ function SpeedTypingGame() {
         } else if (timeRemaining === 0) {
             endGame()
         }
-    }, [timeRemaining, isTimeRunning] )
+    }, [timeRemaining, isTimeRunning])
 
     return (
         <div className="speedHolder">

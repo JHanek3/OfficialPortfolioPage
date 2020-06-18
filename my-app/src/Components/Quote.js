@@ -1,6 +1,6 @@
-import React, {useState, useEffect}  from "react"
+import React, {useState}  from "react"
 import {AnimateOnChange} from "react-animation"
-import "../App.css"
+import "../compCSS/Quote.css"
 import QuoteLs from "./QuoteLs"
 
 //Give a statement with a button

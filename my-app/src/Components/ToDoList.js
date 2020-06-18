@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import TodoItem from "./ToDoItem"
 import todosData from "../todosData"
-import "../App.css"
+import "../compCSS/ToDoList.css"
 
 
 function List() {

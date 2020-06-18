@@ -1,5 +1,5 @@
 import React from "react"
-import "../App.css"
+import "../compCSS/ToDoList.css"
 
 function TodoItem(props) {
     const completedStyle = {

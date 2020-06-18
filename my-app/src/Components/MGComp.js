@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-import "../App.css"
+import "../compCSS/MemeGenerator.css"
 
 function MemeGeneratorComp() {
     const [data, setData] = useState()

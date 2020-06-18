@@ -1,7 +1,7 @@
 import React  from "react"
-import Header from "./Header"
+import Header from "./MemeHeader"
 import MemeGeneratorComp from "./MGComp"
-import "../App.css"
+import "../compCSS/MemeGenerator.css"
 
 function MemeGenerator() {
     return (
