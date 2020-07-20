@@ -9,9 +9,9 @@ function Image({className, img}) {
 
     function heartIcon() {
         if(img.isFavorite) {
-            return <i className="ri-heart-fill favorite" onClick={() => toggleFavorite(img.id)}></i>
+            return <i className="ri-heart-fill favorite" alt="heart-fill" onClick={() => toggleFavorite(img.id)}></i>
         } else if(hovered) {
-            return <i className="ri-heart-line favorite" onClick={() => toggleFavorite(img.id)}></i>
+            return <i className="ri-heart-line favorite" alt="heart-unfilled" onClick={() => toggleFavorite(img.id)}></i>
         }
     }
 
