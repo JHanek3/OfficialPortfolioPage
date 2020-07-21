@@ -6,8 +6,8 @@ import Quote from "./components/Quote"
 import SpeedTypingGame from "./components/SpeedTypingGame"
 import PicSome from "./components/PicSome"
 import Cart from "./pages/Cart"
-import Calculator from "../src/components/Calculator"
-import SWApi from "../src/components/SWApi"
+import Calculator from "./components/Calculator"
+import SWApi from "./components/SWApi"
 import {Link, Switch, Route} from "react-router-dom"
 
 function App() {
