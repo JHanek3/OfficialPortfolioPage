@@ -8,6 +8,7 @@ import PicSome from "./components/PicSome"
 import Cart from "./pages/Cart"
 import Calculator from "./components/Calculator"
 import SWApi from "./components/SWApi"
+import CRUD from "./components/CRUD"
 import {Link, Switch, Route} from "react-router-dom"
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
         this whole landing page into a react app, but that'll be after I finish some more projects.
       </p>
       <Link to="/List">ToDo List</Link> || <Link to="/FunReads">A Quote a Day</Link> || <Link to="/Meme">Meme Generator</Link> || <Link to="/SpeedTypingGame">Speed Typing Game </Link> || <Link to="/Calculator">Calculator App </Link> || <Link to="/PicSome">Pic Some App </Link>
-       || <Link to="/SWApi">Star Wars API w/ Plotly </Link>
+       || <Link to="/SWApi">Star Wars API w/ Plotly </Link>  || <Link to="/Crud">CRUD App, no DB Backend </Link>
       <Switch>
         <Route exact path="/List"><List/></Route>
         <Route exact path="/FunReads"><Quote/></Route>
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/PicSome"><PicSome/></Route>
         <Route exact path="/PicSome/Cart"><Cart/></Route>
         <Route exact path="/SWApi"><SWApi/></Route>
+        <Route exact path="/Crud"><CRUD/></Route>
       </Switch>
     </div>
   )

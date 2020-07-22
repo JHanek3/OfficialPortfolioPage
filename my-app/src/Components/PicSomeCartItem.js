@@ -16,7 +16,7 @@ function CartItem({item}) {
                 onMouseLeave={() => setHovered(false)}
             >
             </i>
-            <img src={item.url} alt="image failed to load" width="130px" />
+            <img src={item.url} alt="failed to load" width="130px" />
             <p>$5.99</p>
         </div>
     )
