@@ -38,6 +38,6 @@ thumb
 sketch
 
 ### API_KEYS
-/key.js
+/src/key.js
 
 # End of https://www.gitignore.io/api/react
