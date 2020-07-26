@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import "../../compCSS/Weather.css";
 import Daily from "./Daily"
 import axios from "axios"
-import API_KEY from "./key"
+import API_KEY from "../../../key"
 
 function WeatherAPI() {
   const [apiData, setApiData] = useState([])
