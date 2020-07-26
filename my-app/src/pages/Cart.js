@@ -1,8 +1,8 @@
 import React, {useState, useContext} from "react"
-import Header from "../components/PicSomeHeader"
+import Header from "../components/PicSome/PicSomeHeader"
 import "../compCSS/PicSome.css"
 import {Context} from "../context/PicSomeContext"
-import CartItem from "../components/PicSomeCartItem"
+import CartItem from "../components/PicSome/PicSomeCartItem"
 
 function Cart() {
     const [buttonText, setButtonText] = useState("Place Order")

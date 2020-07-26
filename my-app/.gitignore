@@ -37,4 +37,7 @@ psd
 thumb
 sketch
 
+### API_KEYS
+\src\components\Weather\key.js
+
 # End of https://www.gitignore.io/api/react

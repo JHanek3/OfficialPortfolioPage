@@ -1,5 +1,5 @@
 import React, {useContext} from "react"
-import Image from "../components/PicSomeImage"
+import Image from "../components/PicSome/PicSomeImage"
 import {Context} from "../context/PicSomeContext"
 import {getClass} from "../utils/indexPhoto"
 

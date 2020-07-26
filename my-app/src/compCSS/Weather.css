@@ -1,0 +1,39 @@
+.header {
+  text-align: center;
+}
+
+.weatherGroup {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.weatherCard {
+  margin: 25px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.cardTitle {
+  text-align: center;
+}
+
+.weather {
+  text-align: center;
+}
+.tempHeader {
+  text-align: center;
+}
+
+.temp {
+  text-align: center;
+  font-size: 25px;
+}
+
+.fTemp {
+  text-align: center;
+}
