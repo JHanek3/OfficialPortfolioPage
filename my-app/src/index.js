@@ -10,9 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render(
   <ContextProvider>
       <Router>
-        <React.StrictMode>
-          <App />
-        </React.StrictMode>
+        <App />
     </Router>
   </ContextProvider>,
   document.getElementById('root')
