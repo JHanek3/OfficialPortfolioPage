@@ -21,7 +21,9 @@
     "babel-cli": "^6.18.0",
     "babel-preset-react-app": "^3.1.2",
     "hosted-git-info": "^4.0.2",
+    "lodash": "^4.17.21",
     "mathjs": "^9.3.2",
+    "postcss": "^8.2.15",
     "react": "^16.13.1"
   }
 }
