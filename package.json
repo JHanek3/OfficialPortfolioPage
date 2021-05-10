@@ -20,11 +20,15 @@
   "dependencies": {
     "babel-cli": "^6.18.0",
     "babel-preset-react-app": "^3.1.2",
+    "braces": "^1.8.5",
+    "elliptic": "^6.5.4",
     "hosted-git-info": "^4.0.2",
     "lodash": "^4.17.21",
     "mathjs": "^9.3.2",
+    "node-forge": "^0.10.0",
     "postcss": "^8.2.15",
     "react": "^16.13.1",
+    "serialize-javascript": "^5.0.1",
     "sockjs": "^0.3.21",
     "url-parse": "^1.5.1"
   }
